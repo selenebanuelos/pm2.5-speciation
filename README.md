@@ -7,7 +7,11 @@ These data are mean estimated mass concentrations reported in ug/m^3 at 0.01x0.0
 ### Table of Contents
 
 **map-residential-pollution.R:** maps raw pollution data (netCDF) to geocoded addresses 
+
 **calculate-time-weighted-average.R:** calculates average mapped pollution concentrations 2-week, 1-month, 1-year prior to given date
+
 **summarize-species-distributions.R:** create visualizations of distributions of PM2.5 species as well as contribution of biomass burning to species and total PM2.5 concentrations
+
 **data-wrangling.R:** miscellaneous data wrangling
+
 **functions.R:** custom functions used across different scripts for project
