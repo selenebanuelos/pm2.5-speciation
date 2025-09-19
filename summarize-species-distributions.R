@@ -2,8 +2,9 @@
 ## Date: 7/2/2025
 ## Description: summarize and visualize PM2.5 species distributions
 
-### load packages 
+### load packages & set options
 library(tidyverse)
+options(scipen = 999) # don't use scientific notation
 
 ### load data 
 
@@ -81,6 +82,8 @@ biomass_total_pm <- month_avg_biomass %>%
 
 # calculate percentage of biomass burning contributions to total PM2.5 concentrations
 perc_biomass_total_pm <- month_avg_biomass %>%
+    filter(pollutant == 'pm2.5') %>%
+    mutate(pollutant = 'biomass_burning') %>%
     pivot_wider(.,
                 names_from = pollutant,
                 values_from = month_avg
