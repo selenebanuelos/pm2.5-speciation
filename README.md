@@ -17,3 +17,5 @@ These data are mean estimated mass concentrations reported in ug/m^3 at 0.01x0.0
 **functions.R:** custom functions used across different scripts for project
 
 **diff-between-timepoints.R** summarizes differences in PM2.5 concentration, PM2.5 component concentrations, and allostatic load scores between timepoints 2 and 4
+
+**calculate-al-scores.R** combines biomarker data and calculate AL scores
